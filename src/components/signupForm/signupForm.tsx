@@ -36,7 +36,7 @@ export const SignupForm = () => {
     >
         {({ errors, touched }) => (
             <Form className={styles.form}>
-                {/* Can extend these beautifully into custom components. Don't have time for this rn. */}
+                {/* Can extend Field beautifully into custom components with field and form event handling. Don't have time for this rn. */}
                 <div>
                     <label>First Name</label>
                     <Field name="firstName" />
