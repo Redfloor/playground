@@ -1,5 +1,7 @@
 // @ts-ignore
 import meridaSound from "src/assets/merida.mp3";
+// @ts-ignore
+import noMyBoySound from "src/assets/myboy.mp3";
 import {SoundButton, SoundButtonProps} from "./SoundButton";
 import {useEffect, useState} from "react";
 import {randomColor} from "../../../utils/utils";
@@ -17,12 +19,12 @@ export const AudioButtons = ({playSound}: Props) => {
             playSound: playSound,
             color: randomColor({index: 0}),
         }, {
-            label: 'A New Hand',
-            sound: new Audio(meridaSound),
+            label: 'No, My boy!',
+            sound: new Audio(noMyBoySound),
             playSound: playSound,
             color: randomColor({index: 1}),
         }, {
-            label: 'A New Hand',
+            label: 'Voodoo',
             sound: new Audio(meridaSound),
             playSound: playSound,
             color: randomColor({index: 2}),

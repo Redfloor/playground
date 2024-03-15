@@ -25,7 +25,7 @@
 
 .container {
     width: 100vw;
-    height: calc(100vh - 80px);
+    /*height: calc(100vh - 80px);*/
     box-sizing: border-box;
 
     display: grid;
@@ -43,8 +43,15 @@
     opacity: 0.8;
     transition: ease-in-out 0.35s;
     cursor: pointer;
+    height: 50vh;
 }
 
 .container button:hover, .container button:active {
     opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: auto auto;
+    }
 }

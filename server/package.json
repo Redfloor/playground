@@ -9,7 +9,7 @@
     "server": "npx nodemon",
     "generate": "graphql-codegen",
     "prestart": "npm run generate",
-    "start": "npm run compile && ts-node  ./src/index.ts",
+    "start": "npm run compile && ts-node ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
