@@ -3,15 +3,15 @@ import {
     Route
 } from "react-router-dom";
 import {Dash} from "../pages/fragment_dash/Dash";
-import {SoundButton} from "../pages/SoundButton/SoundButton";
 import {Forms} from "../pages/forms/forms";
+import {SoundButtonContainer} from "../pages/SoundButton/SoundButtonContainer";
 
 export const Switch = () => {
     return (
         <Routes>
             <Route path="/forms" element={<Forms />}/>
             <Route path="/dash" element={<Dash />}/>
-            <Route path="/*" element={<SoundButton/>} />
+            <Route path="/*" element={<SoundButtonContainer/>} />
         </Routes>
     )
 }
