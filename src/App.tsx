@@ -14,6 +14,7 @@ function App() {
         uri: localGql,
         cache: new InMemoryCache(),
     });
+
     // const apiGql = 'https://api.uat.proof360.io/graphql'
     // TODO: Connect GQL once we've checked it works with server
     // const client = useMemo(() => new ApolloClient({
