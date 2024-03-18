@@ -15,7 +15,6 @@ export const SoundButtonContainer = () => {
     return (
         <div className={styles.container}>
             <AudioButtons playSound={playSound} />
-            <AudioButtons playSound={playSound} />
         </div>
     )
 }

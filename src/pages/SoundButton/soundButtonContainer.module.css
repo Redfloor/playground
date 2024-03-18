@@ -31,6 +31,7 @@
     display: grid;
     gap: 10px;
     grid-template-columns: auto auto auto auto;
+    grid-auto-rows: calc(50vh - 54px);
 
     padding: 10px;
 }
@@ -43,7 +44,6 @@
     opacity: 0.8;
     transition: ease-in-out 0.35s;
     cursor: pointer;
-    height: 50vh;
 }
 
 .container button:hover, .container button:active {
