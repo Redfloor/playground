@@ -30,7 +30,7 @@ body {
 }
 
 
-.colA {left: 0px;}
+.colA {left: 0;}
 .colB {left: 50px;}
 .colC {left: 100px;}
 .colD {left: 150px;}
@@ -39,7 +39,7 @@ body {
 .colG {left: 300px;}
 .colH {left: 350px;}
 
-.row1 {top:  0px;}
+.row1 {top:  0;}
 .row2 {top:  50px;}
 .row3 {top:  100px;}
 .row4 {top:  150px;}
