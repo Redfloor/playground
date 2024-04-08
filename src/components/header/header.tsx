@@ -17,7 +17,7 @@ export const Header = () => {
                 <div
                     className={location.pathname === '/dash' ? styles.active : styles.inactive}
                 >
-                    Dash
+                    Random HTML
                 </div>
             </Link>
             <Link to="/forms">

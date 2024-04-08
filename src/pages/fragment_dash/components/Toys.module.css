@@ -1,0 +1,18 @@
+.box {
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    /*background-color: white;*/
+    box-shadow: 3px 3px 3px 3px #fff;
+    background: linear-gradient(180deg, #0E152800 0%, #0E15283B 100%);
+}
+
+.circle {
+    position: absolute;
+    width:100px;
+    height:100px;
+    bottom: -50px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.75);
+}
