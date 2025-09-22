@@ -42,6 +42,9 @@ export const Header = () => {
                 Flap
             </ActiveLink>
             <ActiveLink to={'/speech-engine'} >Speech Engine</ActiveLink>
+            <ActiveLink to={'/books-test'}>
+                Books Test
+            </ActiveLink>
         </header>
     )
 }

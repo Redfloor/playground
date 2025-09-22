@@ -10,6 +10,7 @@ import {ControlRoom} from "../pages/ControlRoom/ControlRoom";
 import {Flap} from "../pages/Flap/Flap";
 import {ReactPdf} from "../pages/ReactPdf/PDFViewer";
 import {SpeechEngine} from "../pages/speech-engine/SpeechEngine";
+import { BooksTest } from "../pages/BooksTest/BooksTest";
 
 export const Switch = () => {
     const location = useLocation();
@@ -24,6 +25,7 @@ export const Switch = () => {
             <Route path="/flap" element={<Flap />} />
             <Route path="/pdf" element={<ReactPdf />} />
             <Route path="/speech-engine" element={<SpeechEngine />} />
+            <Route path="/books-test" element={<BooksTest />} />
         </Routes>
     )
 }

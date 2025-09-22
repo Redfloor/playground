@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "compile": "tsc",
-    "server": "npx nodemon",
+    "server": "nodemon --watch src --ext ts --exec \"node --loader ts-node/esm ./src/index.ts\"",
     "generate": "graphql-codegen",
     "prestart": "npm run generate",
     "start": "npm run compile && ts-node ./src/index.ts",

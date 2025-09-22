@@ -17,8 +17,8 @@ import { Document, Page, pdfjs } from 'react-pdf';
             };
         }, []);
 
-        {isAdmin && <Component /> }
-        {isAdmin ? <Component1 /> : <Component2 /> }
+        // {isAdmin && <Component /> }
+        // {isAdmin ? <Component1 /> : <Component2 /> }
 
         return (
             <Document
