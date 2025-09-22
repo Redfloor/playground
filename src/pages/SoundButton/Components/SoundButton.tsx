@@ -8,7 +8,6 @@ export interface SoundButtonProps {
 }
 
 export const SoundButton = ({playSound, sound, color, label}: SoundButtonProps) => {
-
     return (
         <button
             onClick={() => playSound(sound)}

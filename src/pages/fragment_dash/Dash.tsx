@@ -4,7 +4,7 @@ import {RandomHtml} from "./components/RandomHtml";
 
 export const Dash = () => {
 
-    return <RandomHtml />
+    return <RandomHtml randomBs={null}/>
     // const { loading, error, data } = useQuery(dash_books);
     // if (loading) return <p>Loading...</p>;
     // if (error) return <p>Error : {error.message}</p>;

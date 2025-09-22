@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    const clickFunc = () => {
+        var a = document.getElementById('inputA');
+        var b = document.getElementById('inputB');
+        a.value = '';
+        b.value = '';
+    }
+
+    const onEnter = () => {
+        if (event.key === 'Enter') {
+            clickFunc();
+        }
+    }
+
+    window.onload = () => {
+        var b = document.getElementById('inputB');
+        b.addEventListener('keydown', onEnter, false);
+    }
+</script>
+<body>
+    <input id="inputA" type="text" />
+    <input id="inputB" type="text" />
+    <button id="button" onclick="clickFunc()">Click me</button>
+</body>
+</html>

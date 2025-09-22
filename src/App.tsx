@@ -5,6 +5,7 @@ import {
 import {
     ApolloClient, ApolloProvider, InMemoryCache,
 } from '@apollo/client';
+import {LocationProvider} from "./contexts/LocationProvider";
 import {Switch} from "./Router/Switch";
 import {Header} from "./components/header/header";
 
@@ -56,10 +57,12 @@ function App() {
     return (
         <ApolloProvider client={client}>
             <Router>
-                <div className="App">
-                    <Header/>
-                    <Switch/>
-                </div>
+                <LocationProvider>
+                    <div className="App">
+                        <Header/>
+                        <Switch/>
+                    </div>
+                </LocationProvider>
             </Router>
         </ApolloProvider>
     );

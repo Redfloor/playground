@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900');
+/* CORE SHIT */
+
+.beambox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 243px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.beambox > line {
+    border-bottom: solid 2px red;
+    border-radius: 4px;
+    position: absolute;
+    width: 324px;
+    animation: glow 10s infinite;
+}
+
+.beambox > .vert {
+    top: 100px;
+    transform: rotate3d(0, 1, 0.5, -75deg);
+    width: calc(324px* 1.40);
+}
+
+.beambox > h2 {
+    font-family: 'Orbitron', sans-serif;
+    z-index: 1;
+    color: black;
+    animation: textglow 10s infinite;
+    margin: auto;
+    /*font-size: 70px;*/
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px 1px red;
+    }
+    50% {
+        box-shadow: 0 0 15px 5px red;
+    }
+    100% {
+        box-shadow: 0 0 5px 1px red;
+    }
+}
+
+@keyframes textglow {
+    0% {
+        text-shadow: 0 0 2px red;
+    }
+    50% {
+        text-shadow: 0 0 10px red;
+    }
+    100% {
+        text-shadow: 0 0 2px red;
+    }
+}
+
+/* SPECIFIC SHIT */
+
+.beambox > .horz0 {
+    bottom: 34px;
+}
+
+.beambox > .horz1 {
+    bottom: 68px;
+}
+
+.beambox > .horz2 {
+    bottom: 102px;
+}
+
+.beambox > .horz3 {
+    bottom: 136px;
+}
+
+.beambox > .horz4 {
+    bottom: 170px;
+}
+
+.vert0 {
+    composes: vert;
+    left: -79px;
+    width: 218px !important;
+    top: 49px !important;
+}
+
+.vert1 {
+    composes: vert;
+    left: -167px;
+}
+
+.vert2 {
+    composes: vert;
+    left: -102px;
+}
+
+.vert3 {
+    composes: vert;
+    left: -37px;
+}
+
+.vert4 {
+    composes: vert;
+    left: 27px;
+}
+
+.vert5 {
+    composes: vert;
+    left: 164px;
+    width: 253px !important;
+    top: 143px !important;
+}

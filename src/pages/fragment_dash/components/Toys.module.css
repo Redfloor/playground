@@ -2,17 +2,18 @@
     position: relative;
     width: 20vw;
     height: 20vw;
-    /*background-color: white;*/
-    box-shadow: 3px 3px 3px 3px #fff;
-    background: linear-gradient(180deg, #0E152800 0%, #0E15283B 100%);
+    background: rgba(255, 0, 0, 1);
+    overflow: hidden;
 }
 
 .circle {
     position: absolute;
-    width:100px;
-    height:100px;
+    width: 100px;
+    height: 100px;
     bottom: -50px;
-    background-color: red;
+    background-color: var(--secondary-color);
     border-radius: 50%;
-    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.75);
+    filter: invert(1);
+    mix-blend-mode: screen;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.75);
 }
